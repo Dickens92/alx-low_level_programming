@@ -31,7 +31,7 @@ int _atoi(char *s)
 			figure = s[i] - '0';
 			if (d % 2)
 				figure = -figure;
-			k = n * 10 + figure;
+			k = k * 10 + figure;
 			f = 1;
 			if (s[i + 1] < '0' || s[i + 1] > '9')
 				break;
@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
 
 	if (argc < 3 || argc > 3)
 	{
-		printf("Error\k");
+		printf("Error\n");
 		return (1);
 	}
 
@@ -67,7 +67,7 @@ int main(int argc, char *argv[])
 	numeral2 = _atoi(argv[2]);
 	result = numeral1 * numeral2;
 
-	printf("%d\k", result);
+	printf("%d\n", result);
 
 	return (0);
 }
