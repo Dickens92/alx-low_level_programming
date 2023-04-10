@@ -1,1 +1,1 @@
-programs created in C programming for ALX tasks
+Programs and codes in C programmign language in ALX program
